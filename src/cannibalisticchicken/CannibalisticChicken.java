@@ -33,6 +33,7 @@ public class CannibalisticChicken {
                 restartGame = 5;
                 question = 0;
                 
+                //Getting users name 
                 if (question == 0){
                     System.out.println("Welcome adventurer. What is your name?");
                     name = keyedInput.nextLine();//Creating the username string
@@ -41,13 +42,16 @@ public class CannibalisticChicken {
                             + "To be spesific you are an adventuring chicken.");
                     question = 1;
                 }
+                
                 if (question == 1){ 
                     while (question == 1){
                     question = -1;
-                    //First Obsitcal
+                    
+                    //Questions
                     System.out.println("You are currently in the town of Canibal.\n"
                             + "Would you like to leave the town? (Enter \" Yes Or No \" )");
                     question1 = keyedInput.nextLine();
+                    
                     if (question1.equalsIgnoreCase("yes")){
                         System.out.println("As you leave the town you smell cooking chicken");
 
